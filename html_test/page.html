@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>
+            my page
+        </title>
+        <meta name="descreption" content="this page to test only"/>
+        <style>
+        
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <!-- 
+    p      => to write pragragh
+    b      => to blod text
+    strong => to blod text(important text)
+    i      => to slop text
+    em     => to slop text
+    mark   => to marked text
+    ins    => inserted text(by marked it)
+    u      => underline text
+    small  => to make text smaller
+    del    => delete text
+    sup    => to high the text 
+    sub    => to low the text
+    to make like and put in it the email => a =>"mailto:(and put the email)"
+    q => to add a "" to word
+    blockqoute => to but a word in blockqoute
+    button => to insert a button, its using in js
+    wbr => when a link is very big you can divided it throught using wbr
+    bdi => its isolate the word(when you write an arabic word)
+    iframe => to but a server in your page
+    code => to write a code in it
+     -->
+    <body>
+        <div class="title">
+            <h1>html test page</h1>
+        </div>
+        <div class="link and images">
+            <!-- ex o create link in page -->
+            <a href="http://google.com" target="_blank" title="go to Google">Google</a>
+            <a href="index.html" title="go to index page">index page</a>
+            <!-- <a href="#ziad/index.html" target="_blank" title="go to ziad pragragh">ziad pragragh</a> -->
+            <img src="https://images.pexels.com/photos/1761279/pexels-photo-1761279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <img src="C:\Users\Administrator\Downloads\pexels-jacob-colvin-1761279.jpg" alt="" width="200" height="300">
+        </div>
+        <div class="table">
+            <ul>
+                <li>HTML</li>
+                <li>CSS
+                    <ul>
+                        <li>color</li>
+                        <li>volum</li>
+                        <li>style</li>
+                    </ul>
+                </li>
+                <li>Js</li>
+            </ul>
+            <ol reversed start="5" type="I">
+                <li>first</li>
+                <li>secound</li>
+                <li>third</li>
+            </ol>
+            <dl>
+                <dt>product</dt>
+                <dd>mobile</dd>
+                <dd>labtop</dd>
+                <dt>product2</dt>
+                <dd>earpods</dd>
+                <dd>smartwatch</dd>
+            </dl>
+        </div>
+        <hr>
+        <!-- 
+        span => make elemant to can interactive with css
+        br => to write in another line
+        hr => to make the line betweet the words and break it
+        div => to divided the pages to blocks
+        :divتنسيق الصفحة من خلال الاوامر التالية بدلا من ال
+        header
+        footer
+        aside 
+        nav
+        main
+        artical 
+        section
+        ___________________________________________________________
+        for images:
+        figure
+        figcaption
+        -->
+        <div>
+            <form method="post" novalidate target="_blank">
+                <label>Username</label>
+                <input type="text" placeholder="Enter your name" required name="name" readonly value="zeyad">
+                <br>
+                <label>password</label>
+                <input type="password" placeholder="Enter your password" required name="password" minlength="7" maxlength="15" autofocus>
+                <br>
+                <label>Email</label>
+                <input type="Email" placeholder="Enter your email" required value="zeyad.ben10@yahoo.com" name="email" disabled>
+                <br>
+                <input type="hidden" name="id">
+                <br>
+                <label>Range</label>
+                <input type="range" placeholder="Enter a range" required  name="range" min="10" max="100" step="20">
+                <br>
+                <label>Color</label>
+                <input type="color" placeholder="Enter your fav color" name="color">
+                <br>
+                <label>Birth Day</label>
+                <input type="number" placeholder="Enter your Birth Day" name="day" max="31" min="1" step="1">
+                <br>
+                <hr>
+                <caption>choose your programming languge</caption>
+                <input type="radio" id="py0">
+                <label for="py0">python</label>
+                <input type="radio" id="cs0">
+                <label for="cs0">C#</label>
+                <input type="radio" id="js0" checked>
+                <label for="js0">java script</label>
+                <br>
+                <hr>
+                <caption>identity your programming languges</caption>
+                <input type="checkbox" id="py" checked>
+                <label for="py">python</label>
+                <input type="checkbox" id="cs">
+                <label for="cs">C#</label>
+                <input type="checkbox" id="js">
+                <label for="js">java script</label>
+                <br>
+                <input type="submit" value="Save">
+                <input type="reset" value="delete">
+                <br>
+                <hr>
+                <label for="cl">select your fav color</label>
+                <select name="color" id="cl" multiple>
+                    <optgroup label="black and white">
+                        <option value="1">black</option>
+                        <option value="2">white</option>
+                    </optgroup>
+                        <optgroup label="author colors">
+                        <option value="3">red</option>
+                        <option value="4">green</option>
+                        <option value="5">yellow</option>
+                        <option value="6" selected>blue</option>
+                        <option value="7">pink</option>
+                        <option value="8">brown</option>
+                        <option value="9">orange</option>
+                    </optgroup>
+                </select>
+                <hr>
+                <label for="tx">write a text</label>
+                <textarea name="text" id="tx" cols="30" rows="10" placeholder="test text" maxlength="50" minlength="10"></textarea>
+                <hr>
+                <label for="fl">choose your file</label>
+                <input type="file" id="fl">
+                <hr>
+                <label for="s">Search</label>
+                <input type="search" id="s">
+                <hr>
+                <label for="url">Url</label>
+                <input type="url" id="url">
+                <hr>
+                <label for="date">select your birth date</label>
+                <input type="date" id="date">
+                <hr>
+                <label for="m">select your month</label>
+                <input type="month" id="m">
+                <hr>
+                <label for="pl">select your programming languge</label>
+                <input list="programming languge" id="pl" name="proglang">
+                <datalist id="programming languge">
+                    <option value="python"></option>
+                    <option value="java"></option>
+                    <option value="C++"></option>
+                    <option value="C#"></option>
+                    <option value="PHP"></option>
+                    <option value="java script"></option>
+                </datalist>
+            </form>
+        </div>
+    </body>
+</html>

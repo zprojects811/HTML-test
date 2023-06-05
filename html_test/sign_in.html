@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="descreption" content="">
+    <title>Sign in</title>
+</head>
+<body>
+    <header>
+        <h1>you can sign with us</h1>
+    </header>
+    <main>
+        <h2>Enter your information:</h2>
+        <form action="" method="post" target="_blank">
+            <label for="name">Username</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <br>
+            <label for="pass">password</label>
+            <input type="password" name="password" placeholder="Enter password" required>
+            <br>
+            <label for="em">Email</label>
+            <input type="email" name="email" placeholder="Enter your email">
+            <hr>
+            <label for="birth">Birth Day</label>
+            <input type="date" id="birth" name="birthDay">
+            <hr>
+            <caption>Choose your gender</caption>
+            <input type="radio" id="m" name="gender">
+            <label for="m">Male</label>
+            <input type="radio" id="f" name="gender">
+            <label for="f">Female</label>
+            <hr>
+            <caption>Enter your programming languges</caption>
+            <input type="checkbox" id="py">
+            <label for="py">python</label>
+            <input type="checkbox" id="c#">
+            <label for="c#">C#</label>
+            <input type="checkbox" id="js">
+            <label for="js">JS</label>
+            <input type="checkbox" id="php">
+            <label for="php">PHP</label>
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label>
+            <hr>
+            <label for="tr">Enter your track</label>
+            <input list="track" id="tr" name="track">
+            <datalist id="track">
+                <option value="Frontend"></option>
+                <option value="Backend"></option>
+                <option value="FullStack"></option>
+            </datalist>
+            <hr>
+            <input type="submit" value="Save">
+            <input type="reset">
+            <hr>
+            <a href="login.html">Logout</a>
+        </form>
+    </main>
+</body>
+</html>
